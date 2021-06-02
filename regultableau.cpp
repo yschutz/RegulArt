@@ -1,0 +1,8 @@
+#include "regultableau.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////
+RegulTableau::RegulTableau(const QString &nom, QObject *parent) : QObject(parent)
+,m_nom(nom)
+{
+
+}

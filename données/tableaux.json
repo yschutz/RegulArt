@@ -1,0 +1,61 @@
+[
+    {
+        "Auteur": "Caravage",
+        "Auteur long": "Michelangelo Merisi da Caravaggio",
+        "Photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/181px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg",
+        "Tableaux": [
+            {
+               "Nom": "Amour Victorieux",
+               "UrlHD": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Caravaggio_-_Cupid_as_Victor_-_Google_Art_Project.jpg",
+               "UrlLD": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Caravaggio_-_Cupid_as_Victor_-_Google_Art_Project.jpg/173px-Caravaggio_-_Cupid_as_Victor_-_Google_Art_Project.jpg",
+               "Dimensions": [
+                   156.0,
+                   113.0
+               ]
+            },
+            {
+                "Nom": "Garçon avec panier de fruits",
+                "UrlHD": "https://upload.wikimedia.org/wikipedia/commons/6/64/Boy_with_a_Basket_of_Fruit-Caravaggio_%281593%29.jpg",
+                "UrlLD": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Michelangelo_Caravaggio_062.jpg/235px-Michelangelo_Caravaggio_062.jpg",
+                "Dimensions": [
+                    70.0,
+                    67.0
+                ]
+            },
+            {
+                "Nom": "Saint Mathieu et l'ange",
+                "UrlHD": "https://upload.wikimedia.org/wikipedia/commons/f/ff/The_Inspiration_of_Saint_Matthew-Caravaggio_%281602%29.jpg",
+                "UrlLD": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Inspiration_of_Saint_Matthew-Caravaggio_%281602%29.jpg/153px-The_Inspiration_of_Saint_Matthew-Caravaggio_%281602%29.jpg",
+                "Dimensions": [
+                    296.5,
+                    195
+                ]
+            }
+        ]
+     },
+     {
+        "Auteur": "Vermeer",
+        "Auteur long": "Johannes Vermeer",
+        "Photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg/172px-Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg",
+        "Tableaux": [
+            {
+                "Nom": "La Jeune Fille à la perle",
+                "UrlHD": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Meisje_met_de_parel.jpg",
+                "UrlLD": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/205px-Meisje_met_de_parel.jpg",
+                "Dimensions": [
+                    44.5,
+                    39
+                ]
+            },
+            {
+                "Nom": "L'Officier et la jeune fille riant",
+                "UrlHD": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Johannes_Vermeer_-_De_Soldaat_en_het_Lachende_Meisje_-_Google_Art_Project.jpg",
+                "UrlLD": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Johannes_Vermeer_-_De_Soldaat_en_het_Lachende_Meisje_-_Google_Art_Project.jpg/220px-Johannes_Vermeer_-_De_Soldaat_en_het_Lachende_Meisje_-_Google_Art_Project.jpg",
+                "Dimensions": [
+                    50.5,
+                    46
+                ]
+            }
+        ]
+    }
+]

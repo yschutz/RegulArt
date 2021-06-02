@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>données/tableaux.json</file>
+        <file>icons/retour.png</file>
+        <file>icons/print.png</file>
+        <file>icons/zoomout.png</file>
+        <file>icons/zoomin.png</file>
+        <file>icons/schrink.png</file>
+        <file>icons/fitWindow.png</file>
+        <file>icons/carreaux.png</file>
+        <file>icons/crosshair.png</file>
+        <file>icons/diagonal.png</file>
+        <file>icons/pen.png</file>
+        <file>icons/BetW.png</file>
+        <file>icons/ellipse.png</file>
+        <file>icons/view.png</file>
+        <file>icons/expand.png</file>
+        <file>icons/save.png</file>
+        <file>icons/open.png</file>
+        <file>icons/peintre.png</file>
+        <file>icons/tableau.png</file>
+        <file>icons/toolbox.png</file>
+        <file>icons/qpen-solid.png</file>
+        <file>icons/qpen-custom.png</file>
+        <file>icons/qpen-dashdotdot.png</file>
+        <file>icons/qpen-dashdot.png</file>
+        <file>icons/qpen-dot.png</file>
+        <file>icons/qpen-dash.png</file>
+        <file>icons/rainbow.png</file>
+        <file>icons/XY-Offset-Directions.png</file>
+        <file>icons/tex.png</file>
+        <file>icons/check.png</file>
+    </qresource>
+</RCC>
