@@ -211,6 +211,8 @@ void  RegulMainWindow::restore()
         return;
     }
     RegulScene *scene = dynamic_cast<RegulScene*>(m_imager->theView()->scene());
+    RegulItemGroup * carreaux = nullptr;
+    RegulItemGroup * diagonales = nullptr;
     int type;
     while (!in.atEnd()) {
         in >> type;
@@ -222,6 +224,26 @@ void  RegulMainWindow::restore()
             scene->addHandDrawnLine(item);
             break;
         }
+        case RegulLineItem::TypeC: {
+            RegulLineItem *item = new RegulLineItem;
+            in >> item;
+            items << item;
+            if (!carreaux)
+                carreaux = scene->setCarreaux();
+            carreaux->addToList(item);
+//            scene->addHandDrawnLine(item);
+            break;
+        }
+        case RegulLineItem::TypeD: {
+            RegulLineItem *item = new RegulLineItem;
+            in >> item;
+            items << item;
+            if (!diagonales)
+                diagonales = scene->setDiagonales();
+            diagonales->addToList(item);
+//            scene->addHandDrawnLine(item);
+            break;
+        }
         case RegulEllipseItem::Type: {
             RegulEllipseItem *item = new RegulEllipseItem;
             in >> item;
@@ -229,38 +251,38 @@ void  RegulMainWindow::restore()
             scene->addHandDrawnEllipse(item);
             break;
         }
-        case QGraphicsItemGroup::Type: {
-            QGraphicsItemGroup *group = new QGraphicsItemGroup;
-            int mytype;
-            in >> mytype;
-            if (mytype == RegulLineItem::Type) {
-                RegulLineItem *item = new RegulLineItem;
-                in >> item;
-                group->addToGroup(item);
-            }
-            items << group;
-            break;
-        }
-        case RegulItemGroup::Type: {
-            RegulItemGroup *group = nullptr;
-            qsizetype size;
-            RegulItemGroup::SUBTYPE subType;
-            in >> subType;
-            if (subType == RegulItemGroup::kCarreaux)
-                group = scene->setCarreaux();
-            else if (subType == RegulItemGroup::kDiagonales)
-                group = scene->setDiagonales();
-            else
-                qFatal("subtype de RegulItemGroup inconnu");
-            in >> size;
-            for (qsizetype index = 0; index < size; index++) {
-                RegulLineItem *item = new RegulLineItem;
-                in >> item;
-                group->addToGroup(item);
-            }
-            items << group;
-            break;
-        }
+//        case QGraphicsItemGroup::Type: {
+//            QGraphicsItemGroup *group = new QGraphicsItemGroup;
+//            int mytype;
+//            in >> mytype;
+//            if (mytype == RegulLineItem::Type) {
+//                RegulLineItem *item = new RegulLineItem;
+//                in >> item;
+//                group->addToGroup(item);
+//            }
+//            items << group;
+//            break;
+//        }
+//        case RegulItemGroup::Type: {
+//            RegulItemGroup *group = nullptr;
+//            qsizetype size;
+//            RegulItemGroup::SUBTYPE subType;
+//            in >> subType;
+//            if (subType == RegulItemGroup::kCarreaux)
+//                group = scene->setCarreaux();
+//            else if (subType == RegulItemGroup::kDiagonales)
+//                group = scene->setDiagonales();
+//            else
+//                qFatal("subtype de RegulItemGroup inconnu");
+//            in >> size;
+//            for (qsizetype index = 0; index < size; index++) {
+//                RegulLineItem *item = new RegulLineItem;
+//                in >> item;
+//                group->addToGroup(item);
+//            }
+//            items << group;
+//            break;
+//        }
         default:
             break;
         }

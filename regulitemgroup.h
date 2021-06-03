@@ -20,9 +20,9 @@ public:
     void    makeDiagonales(const QPointF &tabSize);
 //    void    mousePressEvent(QGraphicsSceneMouseEvent* evt) override;
     void    setMovable(bool val)                         {m_movable = val;}
-    void    setSubType(SUBTYPE val)                      {m_subType = val;}
+//    void    setSubType(SUBTYPE val)                      {m_subType = val;}
 //    int     type() const override                        {return Type;}
-    SUBTYPE subType() const                              {return m_subType;}
+//    SUBTYPE subType() const                              {return m_subType;}
 
     void                      addToList(QGraphicsLineItem* line) {m_lines.append(line);}
     QList<QGraphicsLineItem*> list()                             {return m_lines;}
@@ -30,7 +30,7 @@ public:
 private:
     bool                      m_movable;
     QPen                      m_pen;
-    SUBTYPE                   m_subType;
+//    SUBTYPE                   m_subType;
     QList<QGraphicsLineItem*> m_lines;
 };
 

@@ -342,7 +342,7 @@ void RegulScene::showAllHandDrawn()
 RegulItemGroup *RegulScene::setCarreaux()
 {
     m_carreaux = new RegulItemGroup;
-    m_carreaux->setSubType(RegulItemGroup::kCarreaux);
+//    m_carreaux->setSubType(RegulItemGroup::kCarreaux);
     return m_carreaux;
 }
 
@@ -350,7 +350,7 @@ RegulItemGroup *RegulScene::setCarreaux()
 RegulItemGroup *RegulScene::setDiagonales()
 {
     m_diagonales = new RegulItemGroup;
-    m_diagonales->setSubType(RegulItemGroup::kCarreaux);
+//    m_diagonales->setSubType(RegulItemGroup::kCarreaux);
     return m_diagonales;
 }
 
